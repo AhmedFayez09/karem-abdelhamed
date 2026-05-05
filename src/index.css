@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-900 text-white font-body antialiased;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9A84C;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B39542;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #C9A84C, #F4D068);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
