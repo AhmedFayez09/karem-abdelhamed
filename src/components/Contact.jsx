@@ -16,7 +16,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const text = `الاسم: ${formData.name}%0Aرقم الهاتف: ${formData.phone}%0Aالهدف: ${formData.goal}`;
+    let text = `الاسم: ${formData.name}%0Aرقم الهاتف: ${formData.phone}%0Aالهدف: ${formData.goal}`;
     if (formData.message && formData.message.trim() !== "") {
       text += `%0Aملاحظات: ${formData.message}`;
     }
